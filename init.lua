@@ -1,3 +1,5 @@
 vim.g.powerline_loaded = 1
 require("user")
-require("conf")
+require("conf.gitsigns")
+require("conf.indent")
+require("conf.lualine")
