@@ -26,9 +26,11 @@ vim.opt.guicursor = "n-v-c:block,o:hor50,i-ci:block,r-cr:hor30,sm:block,a:blinko
 vim.opt.tabstop = 8
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-vim.opt.autoindent = true
+vim.opt.autoindent = false
 vim.opt.softtabstop = 4
 vim.opt.splitbelow = true
+
+vim.opt.textwidth = 80
 
 -- invisible characters
 vim.opt.list = true
