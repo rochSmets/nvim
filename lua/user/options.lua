@@ -1,4 +1,4 @@
-vim.opt.wrap  = false
+vim.opt.wrap  = true
 vim.opt.ruler = true
 vim.opt.showcmd = true
 vim.opt.showmatch = true
@@ -30,7 +30,7 @@ vim.opt.autoindent = false
 vim.opt.softtabstop = 4
 vim.opt.splitbelow = true
 
-vim.opt.textwidth = 80
+-- vim.opt.textwidth = 80
 
 -- invisible characters
 vim.opt.list = true
