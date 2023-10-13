@@ -25,12 +25,13 @@ vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>')        -- open/close
 vim.keymap.set('n', '<leader>f', ':NvimTreeRefresh<CR>')       -- refresh
 
 -- fuGitive
-vim.keymap.set("n", "<leader>gs", vim.cmd.GitStatus)
-vim.keymap.set("n", "<leader>gb", vim.cmd.GitBlame)
+vim.keymap.set("n", "<leader>gs", ":Git status<CR>")
+vim.keymap.set("n", "<leader>gb", ":Git blame<CR>")
 
 -- telescope (fuzzy finder)
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
+vim.keymap.set('n', '<leader>si', builtin.git_files, { desc = '[S]earch in g[I]t' })
 vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
 vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
