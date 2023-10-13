@@ -54,7 +54,7 @@ return packer.startup(function(use)
   -- 'nvim-telescope/telescope.nvim' fuzzy finder
   use { "tpope/vim-fugitive" }
 
-  use { "lukas-reineke/indent-blankline.nvim" }
+  use { "lukas-reineke/indent-blankline.nvim" , main = "ibl", opts = {}}
 
   use { "nvim-tree/nvim-tree.lua",
       requires = { "nvim-tree/nvim-web-devicons" } }
