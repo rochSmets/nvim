@@ -37,6 +37,8 @@ vim.keymap.set('n', '<leader>sh', builtin.help_tags   , { desc = '[S]earch [H]el
 vim.keymap.set('n', '<leader>sw', builtin.grep_string , { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', builtin.live_grep   , { desc = '[S]earch by [G]rep' })
 vim.keymap.set('n', '<leader>sd', builtin.diagnostics , { desc = '[S]earch [D]iagnostics' })
+vim.keymap.set('n', '<leader>sm', builtin.keymaps     , { desc = '[S]earch [M]aps' })
+vim.keymap.set('n', '<leader><leader>', builtin.buffers , { desc = '[ ] Find existing buffers' })
 
 vim.keymap.set('n', 'gd'         , builtin.lsp_definitions              , {desc = '[G]oto [D]efinition'})
 vim.keymap.set('n', 'gr'         , builtin.lsp_references               , {desc = '[G]oto [R]eferences'})
