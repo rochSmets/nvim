@@ -68,6 +68,9 @@ return packer.startup(function(use)
       requires = { { "nvim-lua/plenary.nvim" } } }
 
 
+  use { "sbdchd/neoformat" }
+
+
 
 -- all these plugins are related to LSP
 use {
@@ -100,6 +103,7 @@ use {
     {'rafamadriz/friendly-snippets'},
   }
 }
+
 
 
 
